@@ -2,11 +2,11 @@
 *Hack to get Secure Pulse pulseUi working in Debian*
 
 1. Reconfigure dpkg to support multiarch (i386):
-dpkg --add-architecture i386
-apt-get update
+<pre>dpkg --add-architecture i386
+apt-get update</pre>
 
-2. Install the 32 bit version of libwebkitgtk-1.0-0
-sudo apt-get install libwebkitgtk-1.0-0:i386
+2. Install the 32 bit version of `libwebkitgtk-1.0-0`
+<pre>sudo apt-get install libwebkitgtk-1.0-0:i386</pre>
 
 3. Create and export the `LD_LIBRARY_PATH` variable:
 <pre>LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/pulse
