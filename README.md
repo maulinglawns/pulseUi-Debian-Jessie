@@ -1,7 +1,7 @@
 # pulseUi-Debian-Jessie
-*Hack to get Secure Pulse pulseUi working in Debian*
+*Hack to get Secure Pulse pulseUi working in Debian 8 (Jessie)*
 
-1. Reconfigure dpkg to support multiarch (i386):
+1. Reconfigure `dpkg` to support multiarch (i386):
 <pre>dpkg --add-architecture i386
 apt-get update</pre>
 
